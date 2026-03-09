@@ -32,7 +32,9 @@ export default function ProjectsSection() {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
-                    {DATA.projects.map((project, id) => (
+                    {[...DATA.projects]
+                        .sort((a, b) => parseProjectDate(b.dates).getTime() - parseProjectDate(a.dates).getTime())
+                        .map((project, id) => (
                         <BlurFade
                             key={project.title}
                             delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -55,5 +57,34 @@ export default function ProjectsSection() {
             </div>
         </section>
     );
+}
+
+// Helper function to parse project date strings for sorting
+function parseProjectDate(dateString: string): Date {
+    if (!dateString) return new Date(0);
+    
+    // Handle "Present"
+    if (dateString.toLowerCase().includes("present")) {
+        return new Date();
+    }
+
+    // Split by common separators: "-", "–" (en dash), "—" (em dash)
+    const parts = dateString.split(/[-–—]/);
+    
+    // Take the end date if it's a range, otherwise take the whole string
+    const lastPart = (parts.length > 1 ? parts[parts.length - 1] : parts[0]).trim();
+    
+    const date = new Date(lastPart);
+    
+    if (isNaN(date.getTime())) {
+        // Fallback for year-only formats like "2024"
+        const yearMatch = lastPart.match(/\d{4}/);
+        if (yearMatch) {
+            return new Date(parseInt(yearMatch[0]), 0, 1);
+        }
+        return new Date(0);
+    }
+    
+    return date;
 }
 
