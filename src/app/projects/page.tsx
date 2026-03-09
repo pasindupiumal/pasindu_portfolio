@@ -13,6 +13,25 @@ type TabType = "websites" | "extensions" | "google apps script";
 // Add new projects here that will only show on this page
 const ADDITIONAL_PROJECTS = [
   {
+    title: "Business OS – Google Sheets Web App",
+    href: "",
+    dates: "Nov 2025 - Dec 2025",
+    active: true,
+    description:
+      "Small Business OS is a modern web application built on top of Google Sheets using Google Apps Script. The project transforms a traditional spreadsheet into a fully interactive business management system with a clean web-app interface, removing the need to work directly with cells or formulas. The application provides a professional dashboard with interactive controls, pop-up interfaces, and automated workflows for managing business operations. By using Google Sheets as the backend database and a custom frontend layer, the system delivers a smooth app-like experience while keeping data securely stored within Google Drive.",
+    technologies: [
+      "Google Apps Script",
+      "Javascript",
+      "Google Sheets API",
+      "HTML / CSS",
+      "Web App Deployment",
+      "Google Drive Integration",
+    ],
+    image: "",
+    video: "script3.mp4",
+    category: "google apps script" as TabType,
+  },
+  {
     title: "Walmart Product Scraper",
     href: "https://github.com/pasindupiumal03/Walmart-Product-Scrapes-Extension",
     dates: "Jan 2026 - Feb 2026",
@@ -60,7 +79,6 @@ const ADDITIONAL_PROJECTS = [
     video: "script2.mp4",
     category: "google apps script" as TabType,
   },
-
   {
     title: "OneLearning",
     href: undefined,
