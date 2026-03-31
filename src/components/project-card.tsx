@@ -57,10 +57,10 @@ export function ProjectCard({
 }: Props) {
   const isClickable = href && href !== "#";
   const ImageWrapper = isClickable ? Link : "div";
+  const isInternal = href?.startsWith("/");
   const wrapperProps = isClickable ? {
     href: href!,
-    target: "_blank",
-    rel: "noopener noreferrer",
+    ...(isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" }),
     className: "block"
   } : {
     className: "block"
@@ -122,8 +122,7 @@ export function ProjectCard({
           {isClickable && (
             <Link
               href={href!}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
               className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
               aria-label={`Open ${title}`}
             >

@@ -61,7 +61,7 @@ export const DATA = {
       },
       Gmail: {
         name: "Gmail",
-        url: "https://mail.google.com/mail/?view=cm&fs=1&to=pasindupiumal0123@gmail.com",
+        url: "/contact",
         icon: Icons.email,
 
         navbar: true,
