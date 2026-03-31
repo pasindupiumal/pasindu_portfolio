@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Separator } from "@/components/ui/separator";
@@ -18,7 +19,7 @@ export default function Navbar() {
           return (
             <Tooltip key={item.href}>
               <TooltipTrigger asChild>
-                <a
+                <Link
                   href={item.href}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
@@ -26,7 +27,7 @@ export default function Navbar() {
                   <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
                     <item.icon className="size-full rounded-sm overflow-hidden object-contain" />
                   </DockIcon>
-                </a>
+                </Link>
               </TooltipTrigger>
               <TooltipContent
                 side="top"
@@ -51,7 +52,7 @@ export default function Navbar() {
             return (
               <Tooltip key={`social-${name}-${index}`}>
                 <TooltipTrigger asChild>
-                  <a
+                  <Link
                     href={social.url}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
@@ -59,7 +60,7 @@ export default function Navbar() {
                     <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
                       <IconComponent className="size-full rounded-sm overflow-hidden object-contain" />
                     </DockIcon>
-                  </a>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent
                   side="top"
