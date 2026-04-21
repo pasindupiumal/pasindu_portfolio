@@ -446,8 +446,14 @@ export default function ProjectsPage() {
     ...DATA.projects.map((p) => ({
       ...p,
       category: getProjectCategory(p.title),
+      video: (p as any).video || "",
+      links: (p as any).links || [],
     })),
-    ...ADDITIONAL_PROJECTS,
+    ...ADDITIONAL_PROJECTS.map((p) => ({
+      ...p,
+      video: p.video || "",
+      links: p.links || [],
+    })),
   ].sort((a, b) => {
     const dateA = parseProjectDate(a.dates);
     const dateB = parseProjectDate(b.dates);
