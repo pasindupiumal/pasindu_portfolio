@@ -36,10 +36,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex flex-col gap-y-10">
                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
-                        {[...DATA.projects]
-                            .sort((a, b) => parseProjectDate(b.dates).getTime() - parseProjectDate(a.dates).getTime())
-                            .slice(0, 4)
-                            .map((project, id) => (
+                        {DATA.projects.slice(0, 4).map((project, id) => (
                             <BlurFade
                                 key={project.title}
                                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}

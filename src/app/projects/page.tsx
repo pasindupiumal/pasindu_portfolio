@@ -80,46 +80,66 @@ const ADDITIONAL_PROJECTS = [
     category: "google apps script" as TabType,
   },
   {
-    title: "OneLearning",
-    href: undefined,
-    dates: "Sep 2025 - Oct 2025",
+    title: "FlowKey - Bookmark & Layout Manager",
+    href: "https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj",
+    dates: "Aug 2025 - Sep 2025",
     active: true,
     description:
-      "OneLearning is a powerful Chrome extension that helps you effortlessly import your saved LinkedIn posts and organize them with custom tags and notes. It transforms your LinkedIn saved content into a searchable, well-organized knowledge base, making it easy to revisit and reference valuable insights whenever you need them.",
+      "FlowKey is a powerful Chrome extension that streamlines bookmark organization with customizable layouts and seamless Phantom wallet connectivity. Designed with a modern purple-gradient UI and built using React 18 and Webpack 5 for high performance and maintainability.",
     technologies: [
       "React.js",
-      "Chrome Extension API",
-      "IndexedDB",
-      "Chrome Storage",
+      "Javascript",
+      "Chrome Extension (Manifest V3)",
+      "Webpack 5",
+      "Node.js",
+      "Phantom Wallet SDK",
       "TailwindCSS",
-      "Manifest V3",
-    ],
-    image: "Linkedin_Scraper.png",
-    category: "extensions" as TabType,
-  },
-  {
-    title: "Censor AI",
-    href: "https://chromewebstore.google.com/detail/censor/elgfhammpjfmmgiflpjbohhbimlfdimm",
-    dates: "Jul 2025 - Aug 2025",
-    active: true,
-    description:
-      "Censor AI is a smart Chrome extension that revolutionizes email writing on Gmail. Simply type your message, and Censor AI suggests a professionally rewritten version using OpenAI's powerful API. You can send the AI-enhanced email instantly or fine-tune it before sending. Perfect for crafting professional, clear, or friendly emails with ease—making email communication smarter and more efficient.",
-    technologies: [
-      "Chrome Extension API",
-      "OpenAI API",
-      "Gmail Integration",
-      "JavaScript",
-      "TailwindCSS",
-      "Manifest V3",
     ],
     links: [
       {
         type: "Store",
-        href: "https://chromewebstore.google.com/detail/censor/elgfhammpjfmmgiflpjbohhbimlfdimm",
+        href: "https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj",
         icon: <Icons.store className="size-3" />,
       },
+      {
+        type: "Source",
+        href: "https://github.com/pasindupiumal03/FlowKey-Chrome-Extension",
+        icon: <Icons.github className="size-3" />,
+      },
     ],
-    image: "censor-ai.png",
+    image: "",
+    video: "/flowkey.mp4",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "FullGrab - Screenshot & Full Page Capture",
+    href: "https://chromewebstore.google.com/detail/fullgrab-screenshot-full/jfpjeaefbhfogcponhjgpghahalcbplf",
+    dates: "Dec 2025 - Jan 2026",
+    active: true,
+    description:
+      "FullGrab is a modern browser extension that performs full-page and viewport screenshot captures using intelligent auto-scrolling and stitching. All processing is done locally, with optional cloud sharing via secure, one-click generated links.",
+    technologies: [
+      "React.js",
+      "Javascript",
+      "DOM Manipulation",
+      "Canvas API",       
+      "Chrome Extension (Manifest V3)",
+      "Auto-Scrolling & Image Stitching",
+    ],
+    links: [
+      {
+        type: "Store",
+        href: "https://chromewebstore.google.com/detail/fullgrab-screenshot-full/jfpjeaefbhfogcponhjgpghahalcbplf",
+        icon: <Icons.store className="size-3" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/pasindupiumal03/FullGrab-Extension",
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: "",
+    video: "/fullgrab.mp4",
     category: "extensions" as TabType,
   },
   {
@@ -142,26 +162,6 @@ const ADDITIONAL_PROJECTS = [
     category: "extensions" as TabType,
   },
   {
-    title: "WebMind",
-    href: undefined,
-    dates: "Apr 2025 - May 2025",
-    active: true,
-    description:
-      "WebMind is a powerful browser extension that transforms your web history into a private, searchable knowledge base. It automatically records visited websites with URLs, content, and timestamps, encrypting data for security. Using AI-powered vector embeddings and natural language search, you can ask questions like 'What article did I read about Solana NFTs?' and get instant answers. Perfect for researchers, developers, and traders who need intelligent recall without disrupting workflow.",
-    technologies: [
-      "Chrome Extension API",
-      "Node.js",
-      "OpenAI API",
-      "Vector Embeddings",
-      "Encryption",
-      "IndexedDB",
-      "JavaScript",
-      "Manifest V3",
-    ],
-    image: "WebMind.png",
-    category: "extensions" as TabType,
-  },
-  {
     title: "Link Shortener",
     href: undefined,
     dates: "Mar 2025 - Apr 2025",
@@ -181,31 +181,54 @@ const ADDITIONAL_PROJECTS = [
     category: "extensions" as TabType,
   },
   {
-    title: "Amazon Schedule Monitor",
-    href: "https://github.com/pasindupiumal03/Amazon-Schedule-Monitor-Extension",
-    dates: "Feb 2025 - Mar 2025",
+    title: "Office OS – Google Workspace Productivity System",
+    href: "",
+    dates: "Jan 2026 – Feb 2026",
     active: true,
     description:
-      "Amazon Schedule Monitor is a specialized Chrome extension designed to automate the monitoring of Amazon hiring pages for available shift schedules. It automatically checks for schedule updates in the background, sends instant notifications when new shifts become available, and helps users quickly secure their preferred work schedules. Perfect for Amazon flex workers and gig economy professionals who need to stay ahead of schedule releases.",
+      "Office OS is a powerful productivity workspace built inside Google Sheets and powered by Google Apps Script. It transforms a traditional spreadsheet into a modern web-app experience for managing tasks, workflows, and client information. The system features a visual Kanban board for task management, customizable aesthetic themes, built-in focus tools such as a Pomodoro timer, and lightweight CRM functionality. Designed with performance optimizations and an optimistic UI approach, the app delivers a smooth, fast experience directly within the Google Workspace ecosystem while keeping all data stored securely in the user's Google Drive.",
     technologies: [
+      "Google Apps Script",
+      "Javascript",
+      "Google Sheets API",
+      "HTML / CSS",
+      "Workspace Add-on Architecture",
+      "UI Service",
+      "Google Drive Storage",
+    ],
+    links: [],
+    image: "",
+    video: "/script1.mp4",
+    category: "google apps script" as TabType,
+  },
+  {
+    title: "Amazon Product Scraper",
+    href: "https://github.com/pasindupiumal03/Amazon-Product-Scrapes-Extension",
+    dates: "Oct 2025 - Nov 2025",
+    active: true,
+    description:
+      "A comprehensive automation tool that streamlines Amazon product data extraction and processing. Users input Amazon product links or ASINs, and the system automatically fetches all product images and details. It then processes these through OCR technology to extract text from images and automatically populates Google Sheets with structured data including Title, Bullets, Description, Brand, Manufacturer information, and OCR-extracted text from main product images. Perfect for sellers, researchers, and businesses managing large Amazon product catalogs.",
+    technologies: [
+      "Google Apps Script",
       "Chrome Extension API",
-      "Background Scripts",
-      "DOM Manipulation",
+      "OCR API",
       "Web Scraping",
-      "Chrome Notifications",
-      "Chrome Storage",
+      "Google Sheets API",
+      "Amazon Product API",
       "JavaScript",
+      "Image Processing",
       "Manifest V3",
     ],
     links: [
       {
         type: "Source",
-        href: "https://github.com/pasindupiumal03/Amazon-Schedule-Monitor-Extension",
+        href: "https://github.com/pasindupiumal03/Amazon-Product-Scrapes-Extension",
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: "amazon-schedule-monitor.png",
-    category: "extensions" as TabType,
+    image: "",
+    video: "/amazon-product-scraper.mp4",
+    category: "google apps script" as TabType,
   },
   {
     title: "Luneshark",
@@ -523,12 +546,18 @@ export default function ProjectsPage() {
 
 // Helper function to categorize existing projects
 function getProjectCategory(title: string): TabType {
+  const extensions = [
+    "OneLearning",
+    "Censor AI",
+    "WebMind",
+    "Amazon Schedule Monitor",
+    "FlowKey - Bookmark & Layout Manager",
+    "FullGrab - Screenshot & Full Page Capture"
+  ];
+
   if (title === "Bonk Terminal" || title === "Fraktom") {
     return "websites";
-  } else if (
-    title === "FlowKey - Bookmark & Layout Manager" ||
-    title === "FullGrab - Screenshot & Full Page Capture"
-  ) {
+  } else if (extensions.includes(title)) {
     return "extensions";
   }
   return "google apps script";
