@@ -230,37 +230,7 @@ const ADDITIONAL_PROJECTS = [
     video: "/amazon-product-scraper.mp4",
     category: "google apps script" as TabType,
   },
-  {
-    title: "Luneshark",
-    href: "https://luneshark.com",
-    dates: "May 2025 - Jun 2025",
-    active: true,
-    description:
-      "Luneshark is an AI-powered Web3 platform that combines Solana blockchain analytics, AI-driven chat and image generation, and real-time cryptocurrency insights. Built with Next.js 14, it delivers token analytics, trending assets, wallet integration, and intelligent media tools through a modern, scalable, and responsive interface.",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "shadcn/ui",
-      "Solana Web3.js",
-      "APIs",
-      "TailwindCSS",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://luneshark.com",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "source",
-        href: "https://github.com/pasindupiumal03/Luneshark_New",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "",
-    video: "luneshark.mp4",
-    category: "websites" as TabType,
-  },
+
   {
     title: "Solana Tracker",
     href: "https://solan-nine.vercel.app/",
@@ -381,37 +351,7 @@ const ADDITIONAL_PROJECTS = [
     video: "Alphyre-2.mp4",
     category: "websites" as TabType,
   },
-  {
-    title: "Bonk Terminal",
-    href: "https://bonk-terminal.vercel.app",
-    dates: "Jul 2025 - Aug 2025",
-    active: true,
-    description:
-      "A full-stack Solana token exploration platform with terminal-style interface for live trading data, candlestick charts, and AI-powered price predictions. Features real-time token information, market analytics, and seamless clipboard integration using BLYV and Solana Tracker APIs.",
-    technologies: [
-      "React.js",
-      "Javascript",
-      "TailwindCSS",
-      "Node.js",
-      "Express.js",
-      "Solana Web3.js",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://bonk-terminal.vercel.app",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/pasindupiumal03/BONK_Terminal_SOL_Token_Analyzer",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "",
-    video: "/bonk-terminal.mp4",
-    category: "websites" as TabType,
-  },
+
   {
     title: "Fraktom",
     href: "https://fraktom.vercel.app/",
@@ -561,7 +501,7 @@ function getProjectCategory(title: string): TabType {
     "FullGrab - Screenshot & Full Page Capture"
   ];
 
-  if (title === "Bonk Terminal" || title === "Fraktom") {
+  if (title === "Fraktom") {
     return "websites";
   } else if (extensions.includes(title)) {
     return "extensions";

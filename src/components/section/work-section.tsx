@@ -42,10 +42,34 @@ export default function WorkSection() {
           <AccordionTrigger className="hover:no-underline p-0 cursor-pointer transition-colors rounded-none group [&>svg]:hidden">
             <div className="flex items-center gap-x-3 justify-between w-full text-left">
               <div className="flex items-center gap-x-3 flex-1 min-w-0">
-                <LogoImage src={work.logoUrl} alt={work.company} />
+                {work.href ? (
+                  <a
+                    href={work.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex-none"
+                  >
+                    <LogoImage src={work.logoUrl} alt={work.company} />
+                  </a>
+                ) : (
+                  <LogoImage src={work.logoUrl} alt={work.company} />
+                )}
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
                   <div className="font-semibold leading-none flex items-center gap-2">
-                    {work.company}
+                    {work.href ? (
+                      <a
+                        href={work.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="hover:underline cursor-pointer"
+                      >
+                        {work.company}
+                      </a>
+                    ) : (
+                      work.company
+                    )}
                     <span className="relative inline-flex items-center w-3.5 h-3.5">
                       <ChevronRight
                         className={cn(

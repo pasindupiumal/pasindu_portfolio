@@ -28,11 +28,33 @@ export default function Page() {
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
                 />
-                <BlurFadeText
-                  className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
-                  delay={BLUR_FADE_DELAY}
-                  text={DATA.description}
-                />
+                {(() => {
+                  const targetText = "web development, chrome extension development, and blockchain";
+                  const parts = DATA.description.split(targetText);
+                  if (parts.length > 1) {
+                    return (
+                      <BlurFade delay={BLUR_FADE_DELAY}>
+                        <p className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl text-pretty font-sans">
+                          {parts[0]}
+                          <Link
+                            href="#projects"
+                            className="text-primary underline underline-offset-4"
+                          >
+                            {targetText}
+                          </Link>
+                          {parts[1]}
+                        </p>
+                      </BlurFade>
+                    );
+                  }
+                  return (
+                    <BlurFadeText
+                      className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                      delay={BLUR_FADE_DELAY}
+                      text={DATA.description}
+                    />
+                  );
+                })()}
               </div>
               <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
                 <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
