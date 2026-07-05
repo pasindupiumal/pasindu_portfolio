@@ -15,15 +15,15 @@ import {
 } from "react-icons/si";
 
 export const DATA = {
-  name: "Pasindu Weerakoon",
+  name: "Pasindu Piumal",
   initials: "PW",
   url: "https://pasindu-dev.me",
   location: "Kegalle, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/kegalle",
   description:
-    "Aspiring Software Engineer with hands-on experience in web development, extension development, and blockchain. Passionate about creating scalable and user-focused solutions.",
+    "Aspiring Software Engineer with hands-on experience in web development, chrome extension development, and blockchain. Passionate about creating scalable and user-focused solutions.",
   summary:
-    "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2025, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and Chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
+    "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2025, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
   avatarUrl: "/me.png",
   skills: [
     { name: "React", icon: ReactLight },
@@ -89,11 +89,35 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Software Engineer",
-      logoUrl: "https://bytesquadlabs.com/images/bytesquad-logo.png",
+      logoUrl: "/bytesquadlabs.jpg",
       start: "2025",
       end: "Present",
       description:
         "I'm creating fullstack websites and developing chrome extensions. Working with modern web technologies to build scalable applications and browser extensions that enhance user productivity and experience.",
+    },
+    {
+      company: "Upwork",
+      href: "https://www.upwork.com/freelancers/pasindupiumal",
+      badges: [],
+      location: "Remote",
+      title: "Freelance Software Engineer",
+      logoUrl: "/upwork.png",
+      start: "2025",
+      end: "Present",
+      description:
+        "Developing custom fullstack applications, API integrations, and automation scripts for clients worldwide. Collaborating closely with international clients to deliver clean, scalable, and well-documented solutions.",
+    },
+    {
+      company: "Fiverr",
+      href: "https://www.fiverr.com/pasinduxyz",
+      badges: [],
+      location: "Remote",
+      title: "Freelance Software Engineer",
+      logoUrl: "/Fiverr.png",
+      start: "2025",
+      end: "Present",
+      description:
+        "Building customized web solutions, browser extensions, and scripting tools tailored to client specifications. Consistently delivering high-quality code and maintaining excellent client satisfaction.",
     },
     // {
     //   company: "Shopify",
@@ -233,7 +257,7 @@ export const DATA = {
         "Manifest V3",
       ],
       image: "Linkedin_Scraper.png",
-      
+
     },
     {
       title: "Censor AI",

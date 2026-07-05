@@ -10,6 +10,14 @@ export const size = {
 export const contentType = 'image/png'
  
 export default async function AppleIcon() {
+  // Fetch the local image and convert it to base64
+  const meBuffer = await fetch(
+    new URL('../../public/me.png', import.meta.url)
+  ).then((res) => res.arrayBuffer())
+
+  const base64Image = Buffer.from(meBuffer).toString('base64')
+  const dataUrl = `data:image/png;base64,${base64Image}`
+
   return new ImageResponse(
     (
       <div
@@ -25,7 +33,7 @@ export default async function AppleIcon() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://pasindu-dev.me/me.png"
+          src={dataUrl}
           alt="apple-icon"
           width="180"
           height="180"
