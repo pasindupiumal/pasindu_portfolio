@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
-
-export const runtime = 'edge'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
 export const size = {
   width: 32,
@@ -10,12 +10,9 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Icon() {
-  // Fetch the local image and convert it to base64
-  const meBuffer = await fetch(
-    new URL('../../public/me.png', import.meta.url)
-  ).then((res) => res.arrayBuffer())
-
-  const base64Image = Buffer.from(meBuffer).toString('base64')
+  const filePath = join(process.cwd(), 'public/me.png')
+  const meBuffer = readFileSync(filePath)
+  const base64Image = meBuffer.toString('base64')
   const dataUrl = `data:image/png;base64,${base64Image}`
 
   return new ImageResponse(
