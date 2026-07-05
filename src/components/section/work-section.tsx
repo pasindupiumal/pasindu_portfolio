@@ -33,7 +33,16 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 export default function WorkSection() {
   return (
     <Accordion type="single" collapsible className="w-full grid gap-6">
-      {DATA.work.map((work) => {
+      {DATA.work.map((w) => {
+        const work = w as {
+          company: string;
+          href?: string;
+          logoUrl: string;
+          title: string;
+          start: string;
+          end?: string;
+          description: string;
+        };
         const hasHref = !!work.href;
         return (
           <AccordionItem
