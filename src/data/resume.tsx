@@ -17,11 +17,13 @@ import {
 export const DATA = {
   name: "Pasindu Piumal",
   initials: "PW",
-  url: "https://pasindu-dev.me",
+  url: "https://pasindupiumal.com",
   location: "Kegalle, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/kegalle",
   description:
-    "Aspiring Software Engineer with hands-on experience in web development, chrome extension development, and blockchain. Passionate about creating scalable and user-focused solutions.",
+    "Expert Freelance Chrome Extension Developer specializing in Manifest V3, automation, and custom browser tools.",
+  seoDescription:
+    "Hire Pasindu Piumal, an expert freelance Chrome Extension developer specializing in Manifest V3, automation, and web development. View my portfolio and projects.",
   summary:
     "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2025, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
   avatarUrl: "/me.png",
@@ -47,16 +49,34 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/pasindupiumal03",
+        url: "https://github.com/pasindupiumal",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/pasindu-piumalxyz/",
+        url: "https://www.linkedin.com/in/pasindupiumal/",
         icon: Icons.linkedin,
 
+        navbar: true,
+      },
+      X: {
+        name: "X",
+        url: "https://x.com/pasindupiumal03",
+        icon: Icons.x,
+        navbar: true,
+      },
+      Upwork: {
+        name: "Upwork",
+        url: "https://www.upwork.com/freelancers/pasindupiumal",
+        icon: Icons.upwork,
+        navbar: true,
+      },
+      Fiverr: {
+        name: "Fiverr",
+        url: "https://www.fiverr.com/pasinduxyz",
+        icon: Icons.fiverr,
         navbar: true,
       },
       Gmail: {
@@ -100,7 +120,7 @@ export const DATA = {
       href: "https://www.upwork.com/freelancers/pasindupiumal",
       badges: [],
       location: "Remote",
-      title: "Freelance Software Engineer",
+      title: "Freelance Chrome Extension Developer",
       logoUrl: "/upwork.png",
       start: "2025",
       end: "Present",
@@ -112,73 +132,13 @@ export const DATA = {
       href: "https://www.fiverr.com/pasinduxyz",
       badges: [],
       location: "Remote",
-      title: "Freelance Software Engineer",
+      title: "Freelance Browser Automation Developer",
       logoUrl: "/Fiverr.png",
       start: "2025",
       end: "Present",
       description:
         "Building customized web solutions, browser extensions, and scripting tools tailored to client specifications. Consistently delivering high-quality code and maintaining excellent client satisfaction.",
     },
-    // {
-    //   company: "Shopify",
-    //   badges: [],
-    //   href: "https://shopify.com",
-    //   location: "Remote",
-    //   title: "Software Engineer",
-    //   logoUrl: "/shopify.svg",
-    //   start: "January 2021",
-    //   end: "April 2021",
-    //   description:
-    //     "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    // },
-    // {
-    //   company: "Nvidia",
-    //   href: "https://nvidia.com/",
-    //   badges: [],
-    //   location: "Santa Clara, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/nvidia.png",
-    //   start: "January 2020",
-    //   end: "April 2020",
-    //   description:
-    //     "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    // },
-    // {
-    //   company: "Splunk",
-    //   href: "https://splunk.com",
-    //   badges: [],
-    //   location: "San Jose, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/splunk.svg",
-    //   start: "January 2019",
-    //   end: "April 2019",
-    //   description:
-    //     "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    // },
-    // {
-    //   company: "Lime",
-    //   href: "https://li.me/",
-    //   badges: [],
-    //   location: "San Francisco, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/lime.svg",
-    //   start: "January 2018",
-    //   end: "April 2018",
-    //   description:
-    //     "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    // },
-    // {
-    //   company: "Mitre Media",
-    //   href: "https://mitremedia.com/",
-    //   badges: [],
-    //   location: "Toronto, ON",
-    //   title: "Software Engineer",
-    //   logoUrl: "/mitremedia.png",
-    //   start: "May 2017",
-    //   end: "August 2017",
-    //   description:
-    //     "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    // },
   ],
   education: [
     {
@@ -205,14 +165,6 @@ export const DATA = {
       start: "2013",
       end: "2022",
     },
-    // {
-    //   school: "International Baccalaureate",
-    //   href: "https://ibo.org",
-    //   degree: "IB Diploma",
-    //   logoUrl: "/ib.png",
-    //   start: "2012",
-    //   end: "2016",
-    // },
   ],
   projects: [
     {

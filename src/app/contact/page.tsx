@@ -91,7 +91,7 @@ export default function ContactPage() {
                                                 key={idx} 
                                                 href={social.url} 
                                                 target="_blank" 
-                                                rel="noreferrer" 
+                                                rel="noopener noreferrer" 
                                                 className="size-11 flex items-center justify-center border bg-background/50 rounded-xl transition-all hover:bg-primary hover:text-primary-foreground hover:scale-110 active:scale-95"
                                                 aria-label={name}
                                             >

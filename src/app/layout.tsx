@@ -23,13 +23,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Freelance Chrome Extension Developer`,
     template: `%s | ${DATA.name}`,
   },
-  description: DATA.description,
+  description: DATA.seoDescription,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
+    title: `${DATA.name} | Freelance Chrome Extension Developer`,
+    description: DATA.seoDescription,
     url: DATA.url,
     siteName: `${DATA.name}`,
     locale: "en_US",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} | Freelance Chrome Extension Developer`,
     card: "summary_large_image",
   },
   verification: {
