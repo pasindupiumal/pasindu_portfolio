@@ -29,7 +29,7 @@ export default function Page() {
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
                 />
                 {(() => {
-                  const targetText = "web development, chrome extension development, and blockchain";
+                  const targetText = "Manifest V3, automation, and custom browser tools";
                   const parts = DATA.description.split(targetText);
                   if (parts.length > 1) {
                     return (

@@ -8,6 +8,19 @@ import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
+function cleanDescriptionForAlt(desc: string): string {
+  // Strip markdown links [Text](url) to just Text
+  let cleaned = desc.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+  // Strip other markdown characters
+  cleaned = cleaned.replace(/[*_`#]/g, "");
+  // Get the first sentence
+  const sentenceEnd = cleaned.indexOf(".");
+  if (sentenceEnd !== -1) {
+    cleaned = cleaned.substring(0, sentenceEnd);
+  }
+  return cleaned.trim();
+}
+
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
 
@@ -66,6 +79,11 @@ export function ProjectCard({
     className: "block"
   };
 
+  const cleanDesc = cleanDescriptionForAlt(description);
+  const descriptiveAlt = cleanDesc
+    ? `${title} - ${cleanDesc} by Pasindu Piumal`
+    : `${title} project screenshot by Pasindu Piumal`;
+
   return (
     <div
       className={cn(
@@ -84,9 +102,11 @@ export function ProjectCard({
               muted
               playsInline
               className="w-full h-48 object-cover"
+              title={`${title} - Video demonstration by Pasindu Piumal`}
+              aria-label={`${title} - Video demonstration by Pasindu Piumal`}
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage src={image} alt={descriptiveAlt} />
           ) : (
             <div className="w-full h-48 bg-muted" />
           )}
