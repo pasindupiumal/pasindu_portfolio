@@ -112,34 +112,99 @@ const ADDITIONAL_PROJECTS = [
     category: "extensions" as TabType,
   },
   {
-    title: "FullGrab - Screenshot & Full Page Capture",
-    href: "https://chromewebstore.google.com/detail/fullgrab-screenshot-full/jfpjeaefbhfogcponhjgpghahalcbplf",
-    dates: "Dec 2025 - Jan 2026",
+    title: "Amazon Schedule Monitor",
+    href: "https://github.com/pasindupiumal03/Amazon-Schedule-Monitor-Extension",
+    dates: "Feb 2025 - Mar 2025",
     active: true,
     description:
-      "FullGrab is a modern browser extension that performs full-page and viewport screenshot captures using intelligent auto-scrolling and stitching. All processing is done locally, with optional cloud sharing via secure, one-click generated links.",
+      "Amazon Schedule Monitor is a specialized Chrome extension designed to automate the monitoring of Amazon hiring pages for available shift schedules. It automatically checks for schedule updates in the background, sends instant notifications when new shifts become available, and helps users quickly secure their preferred work schedules. Perfect for Amazon flex workers and gig economy professionals who need to stay ahead of schedule releases.",
+    technologies: [
+      "Chrome Extension API",
+      "Background Scripts",
+      "DOM Manipulation",
+      "Web Scraping",
+      "Chrome Notifications",
+      "Chrome Storage",
+      "JavaScript",
+      "Manifest V3",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/pasindupiumal03/Amazon-Schedule-Monitor-Extension",
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: "amazon-schedule-monitor.png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "OneLearning",
+    href: "",
+    dates: "Sep 2025 - Oct 2025",
+    active: true,
+    description:
+      "OneLearning is a powerful Chrome extension that helps you effortlessly import your saved LinkedIn posts and organize them with custom tags and notes. It transforms your LinkedIn saved content into a searchable, well-organized knowledge base, making it easy to revisit and reference valuable insights whenever you need them.",
     technologies: [
       "React.js",
-      "Javascript",
-      "DOM Manipulation",
-      "Canvas API",       
-      "Chrome Extension (Manifest V3)",
-      "Auto-Scrolling & Image Stitching",
+      "Chrome Extension API",
+      "IndexedDB",
+      "Chrome Storage",
+      "TailwindCSS",
+      "Manifest V3",
+    ],
+    links: [],
+    image: "Linkedin_Scraper.png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "Censor AI",
+    href: "https://chromewebstore.google.com/detail/censor/elgfhammpjfmmgiflpjbohhbimlfdimm",
+    dates: "Jul 2025 - Aug 2025",
+    active: true,
+    description:
+      "Censor AI is a smart Chrome extension that revolutionizes email writing on Gmail. Simply type your message, and Censor AI suggests a professionally rewritten version using OpenAI's powerful API. You can send the AI-enhanced email instantly or fine-tune it before sending. Perfect for crafting professional, clear, or friendly emails with ease—making email communication smarter and more efficient.",
+    technologies: [
+      "Chrome Extension API",
+      "OpenAI API",
+      "Gmail Integration",
+      "JavaScript",
+      "TailwindCSS",
+      "Manifest V3",
     ],
     links: [
       {
         type: "Store",
-        href: "https://chromewebstore.google.com/detail/fullgrab-screenshot-full/jfpjeaefbhfogcponhjgpghahalcbplf",
+        href: "https://chromewebstore.google.com/detail/censor/elgfhammpjfmmgiflpjbohhbimlfdimm",
         icon: <Icons.store className="size-3" />,
       },
-      {
-        type: "Source",
-        href: "https://github.com/pasindupiumal03/FullGrab-Extension",
-        icon: <Icons.github className="size-3" />,
-      },
     ],
-    image: "",
-    video: "/fullgrab.mp4",
+    image: "censor-ai.png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "WebMind",
+    href: "",
+    dates: "Apr 2025 - May 2025",
+    active: true,
+    description:
+      "WebMind is a powerful browser extension that transforms your web history into a private, searchable knowledge base. It automatically records visited websites with URLs, content, and timestamps, encrypting data for security. Using AI-powered vector embeddings and natural language search, you can ask questions like 'What article did I read about Solana NFTs?' and get instant answers. Perfect for researchers, developers, and traders who need intelligent recall without disrupting workflow.",
+    technologies: [
+      "Chrome Extension API",
+      "Node.js",
+      "OpenAI API",
+      "Vector Embeddings",
+      "Encryption",
+      "IndexedDB",
+      "JavaScript",
+      "Manifest V3",
+    ],
+    links: [],
+    image: "WebMind.png",
+    video: "",
     category: "extensions" as TabType,
   },
   {
@@ -376,6 +441,111 @@ const ADDITIONAL_PROJECTS = [
     video: "/fraktom.mp4",
     category: "websites" as TabType,
   },
+  {
+    title: "AWS WAF & Amazon Captcha Auto-Recovery: Shadow DOM Smart Reloader",
+    href: "",
+    dates: "Mar 2026 - Apr 2026",
+    active: true,
+    description:
+      "Stop losing leads to stuck captchas. I engineered \"NopeCHA Smart Reload,\" a specialized Manifest V3 extension that solves the \"infinite loop\" problem in automated browsing. Unlike standard scripts, this tool utilizes a Deep Scan Architecture to penetrate Shadow DOMs—detecting failure signals in AWS WAF and Amazon Captchas that other tools miss.\n\nBuilt with a high-performance React/Tailwind frontend, it features intelligent recovery logic that monitors solver health in real-time. When a failure is detected, it triggers a surgical 3-second recovery countdown and page refresh.",
+    technologies: [
+      "React.js",
+      "TailwindCSS",
+      "Manifest V3",
+      "Chrome Extension API",
+      "Shadow DOM",
+      "AWS WAF",
+      "Automation",
+    ],
+    links: [],
+    image: "Automated Pro (1).png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "Amazon Real-Time Slot Tracker: High-Fidelity Data Extraction Tool",
+    href: "",
+    dates: "Apr 2026 - May 2026",
+    active: true,
+    description:
+      "Unlock hidden workforce insights with real-time data synchronization. I developed a production-ready Chrome Extension (Manifest V3) that extracts deep-level job slot metrics from Amazon's hiring portals. To overcome the industry-standard \"401 Unauthorized\" and CORS barriers, I implemented a \"Main World\" script injection technique, allowing the extension to securely leverage the site’s own session context.\n\nThe tool features a high-performance React-based glassmorphic dashboard that tracks 11+ critical metrics, including labor demand, filled positions, and batch availability.",
+    technologies: [
+      "React.js",
+      "TailwindCSS",
+      "Manifest V3",
+      "Chrome Extension API",
+      "Main World Injection",
+      "CORS Bypass",
+      "Session Context",
+    ],
+    links: [],
+    image: "Automated Pro (2).png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "Amazon Portal Session Recovery: URL Auto-Repair Chrome Extension",
+    href: "",
+    dates: "May 2026 - Jun 2026",
+    active: true,
+    description:
+      "Eliminate candidate drop-off caused by broken web sessions. I engineered an intelligent URL Auto-Repair Chrome Extension (Manifest V3) designed to detect and programmatically fix \"Timeout,\" \"404,\" and \"No Shift Available\" loops on Amazon’s recruitment platforms.\n\nBuilt with React and Tailwind CSS, the extension uses the Browser History API to preserve query parameters while executing surgical redirects. To ensure high reliability, I designed a custom 1-minute cooldown retry loop and a smart DOM-polling mechanism that checks for specific error banners before modifying states—preventing refresh.",
+    technologies: [
+      "React.js",
+      "TailwindCSS",
+      "Manifest V3",
+      "Chrome Extension API",
+      "Browser History API",
+      "DOM Polling",
+      "Session Recovery",
+    ],
+    links: [],
+    image: "Amazon Redirect Amazon Portal Session Recovery URL Auto-Repair Chrome Extension.png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "Amazon Shift Availability Monitor: Real-Time Web Scraping Engine",
+    href: "",
+    dates: "Jun 2026 - Jul 2026",
+    active: true,
+    description:
+      "Never miss a high-demand slot to rate-limiting. I developed a high-frequency availability monitoring Chrome Extension (Manifest V3) that tracks real-time shift openings on Amazon hiring platforms.\n\nBuilt with a React interface and a resilient background service worker, the extension polls target pages every second for specific \"No Headcount\" errors without triggering anti-bot flags. Crucially, I engineered a 403 CloudFront Recovery system that automatically pauses execution for 60 seconds upon detecting an IP block, ensuring continuous, long-term operation without detection.",
+    technologies: [
+      "React.js",
+      "TailwindCSS",
+      "Manifest V3",
+      "Chrome Extension API",
+      "Service Worker",
+      "Web Scraping",
+      "IP Cooldown",
+    ],
+    links: [],
+    image: "Amazon Redirect Amazon Portal Session Recovery URL Auto-Repair Chrome Extension (1).png",
+    video: "",
+    category: "extensions" as TabType,
+  },
+  {
+    title: "Amazon Hiring Automation: Custom Chrome Extension with OTP & AI-Sync",
+    href: "",
+    dates: "Jul 2026 - Aug 2026",
+    active: true,
+    description:
+      "Eliminate login friction with advanced, human-like browser automation. I engineered \"AutomatePro,\" a Manifest V3 Chrome extension designed to bypass complex authentication bottlenecks on Amazon’s hiring portal. This isn't a simple script; it’s a robust automation engine featuring Human Emulation (simulated typing/clicks) and Smart OTP Retrieval via API bridges or direct Gmail DOM scanning.\n\nTo ensure reliability, I implemented a CAPTCHA Safety Lockdown and a persistent Service Worker keepalive.",
+    technologies: [
+      "Manifest V3",
+      "Chrome Extension API",
+      "Human Emulation",
+      "OTP API",
+      "DOM Scanning",
+      "CAPTCHA Lockdown",
+      "Service Worker Keepalive",
+    ],
+    links: [],
+    image: "Automated Pro.png",
+    video: "",
+    category: "extensions" as TabType,
+  },
 ];
 
 export default function ProjectsPage() {
@@ -395,6 +565,8 @@ export default function ProjectsPage() {
       links: p.links || [],
     })),
   ].sort((a, b) => {
+    if (a.title === "Amazon Shift Sniper: High-Frequency Automation Chrome Extension") return -1;
+    if (b.title === "Amazon Shift Sniper: High-Frequency Automation Chrome Extension") return 1;
     const dateA = parseProjectDate(a.dates);
     const dateB = parseProjectDate(b.dates);
     return dateB.getTime() - dateA.getTime();
@@ -498,7 +670,10 @@ function getProjectCategory(title: string): TabType {
     "WebMind",
     "Amazon Schedule Monitor",
     "FlowKey - Bookmark & Layout Manager",
-    "FullGrab - Screenshot & Full Page Capture"
+    "FullGrab - Screenshot & Full Page Capture",
+    "Amazon Shift Sniper: High-Frequency Automation Chrome Extension",
+    "Full SaaS Build | SuperDev Pro Chrome Extension Platform",
+    "SuperX - Chrome Extension and Full-Stack SaaS Platform"
   ];
 
   if (title === "Fraktom") {
